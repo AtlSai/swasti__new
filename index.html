@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Assistant:wght@200..800&family=Caveat:wght@400..700&family=Concert+One&family=Courgette&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Itim&family=League+Spartan:wght@100..900&family=Monoton&family=Neucha&family=Outfit:wght@100..900&family=Permanent+Marker&family=Protest+Revolution&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita:wght@400;700&family=Assistant:wght@200..800&family=Caveat:wght@400..700&family=Concert+One&family=Courgette&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Itim&family=League+Spartan:wght@100..900&family=Monoton&family=Neucha&family=Outfit:wght@100..900&family=Permanent+Marker&family=Protest+Revolution&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-in">
+      <div class="nav_first1">
+        <div class="nav_first2">
+          <h3>
+            For Customer Services, <span>Please ask our support assistant</span>
+          </h3>
+        </div>
+        <hr />
+      </div>
+      <nav class="navbar">
+        <div class="logo">SwastiBharat</div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links" id="nav-links">
+          <a href="#">Instructors</a>
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Services</a>
+        </div>
+        <div class="rightside">
+          <i class="fas fa-globe icon"></i>
+          <button class="login-button">
+            Login <i class="fas fa-user iconn"></i>
+          </button>
+        </div>
+      </nav>
+      <script>
+        document
+          .getElementById("hamburger")
+          .addEventListener("click", function () {
+            document.getElementById("nav-links").classList.toggle("open");
+          });
+      </script>
+      <div class="search-container">
+        <div class="search-box">
+          <div class="input-box">
+            <label>Location</label>
+            <input type="text" placeholder="Enter your address" />
+          </div>
+          <div class="verticle"><h4>|</h4></div>
+          <div class="input-box">
+            <label>Start time</label>
+            <input title="date" />
+          </div>
+          <div class="verticle"><h4>|</h4></div>
+          <div class="input-box">
+            <label>End time</label>
+            <input title="date" />
+          </div>
+          <div class="verticle"><h4>|</h4></div>
+          <div class="input-box">
+            <label>Find help today</label>
+            <select title="select">
+              <option>Select category</option>
+              <option>Plumber</option>
+              <option>Electrician</option>
+              <option>Carpenter</option>
+            </select>
+          </div>
+          <div class="verticle"><h4>|</h4></div>
+          <button class="search-btn">
+            Find help now <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="left">
+          <div class="top-left">
+            <img src="assets/arrow.png" alt="" />
+            <div class="btns">
+              <div class="btn1">
+                <!-- <button>Services</button> -->
+                <button>HelpPlatform</button>
+              </div>
+            </div>
+            <h1>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              culpa.
+            </h1>
+            <button>Get help now</button>
+          </div>
+          <div class="bottom-left">
+            <div class="bottom-left-1">
+              <img src="assets/arrow.png" alt="" />
+              <div class="shipping">
+                <!-- <button>Shipping</button> -->
+              </div>
+              <h2>Find Your Inner Peace with Yoga</h2>
+            </div>
+            <div class="bottom-left-2">
+              <img src="assets/arrow.png" alt="" />
+              <div class="text_or_icon">
+                <h2>Ready to turn your Skills</h2>
+              </div>
+              <button>Join us</button>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="top-right">
+            <img src="assets/arrow.png" alt="" />
+            <div class="top-right-text">
+              <h1>Office Work</h1>
+              <h2>
+                Efficency starts here <br />
+                Elevate your Office Work.
+              </h2>
+              <button>Get Help Now</button>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <div class="bottom-right-1">
+              <img src="assets/" alt="" />
+              <h3>Handyman Services</h3>
+            </div>
+            <div class="bottom-right-2">
+              <div class="profile-container">
+                <div class="profile-images">
+                  <img
+                    src="https://via.placeholder.com/40"
+                    alt="Profile 1"
+                    class="profile-img first"
+                  />
+                  <img
+                    src="https://via.placeholder.com/40"
+                    alt="Profile 2"
+                    class="profile-img second"
+                  />
+                  <div class="member-count">81K+</div>
+                </div>
+                <span class="profile-text">Worldwide Members</span>
+              </div>
+              <h1>Hire Top Tasker</h1>
+              <h2>
+                Hire the best Tasker <br />
+                for your need.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container_2">
+        <div class="text">
+          <h1>Introducing SwastiBharat Project</h1>
+        </div>
+        <div class="card_main">
+          <div class="sidebar">
+            <div onclick="changeCard(0)" class="active">1</div>
+            <div onclick="changeCard(1)" class="two">2</div>
+            <div onclick="changeCard(2)" class="three">3</div>
+          </div>
+          <div class="no_next">
+            <div class="text-section" id="text-section">
+              <h2>
+                We use AI to unlock unmatched insights and define the value
+                paths
+              </h2>
+              <p>
+                Optimize your projects’ finances and resources. Receive tailored
+                recommendations for the best products and resources while
+                staying on budget with real-time expense monitoring.
+              </p>
+            </div>
+            <div class="dashboard">
+              <div class="card expense-tracking">
+                <img
+                  src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg"
+                  alt="AI Analysis"
+                />
+                <!-- <div class="expense-info">
+                        <p>Expense Tracking</p>
+                        <h3>$11,478 <span style="color: blue;">↑ 9%</span></h3>
+                        <div class="chart">
+                            <span>+22%</span>
+                        </div>
+                    </div> -->
+                <div class="bg-white rounded-lg shadow-lg p-4 w-64">
+                  <div class="text-gray-800 text-lg font-semibold">
+                    Expense Tracking
+                  </div>
+                  <div class="flex items-baseline mt-2">
+                    <div class="text-2xl font-bold text-gray-900">$11,478</div>
+                    <div class="text-blue-500 text-sm ml-2 flex items-center">
+                      <i class="fas fa-arrow-up"></i>
+                      <span class="ml-1">9%</span>
+                    </div>
+                  </div>
+                  <div class="mt-4">
+                    <div class="flex items-end space-x-1">
+                      <div class="bg-blue-500 h-4 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-6 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-8 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-10 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-12 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-14 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-16 w-4 rounded-t-md"></div>
+                      <div class="bg-blue-500 h-18 w-4 rounded-t-md"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card procurement">
+                <p>Optimized Sourcing and Procurements</p>
+                <img
+                  src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
+                  alt="Team"
+                />
+                <img
+                  src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
+                  alt="Team"
+                />
+              </div>
+              <div class="card analytics">
+                <p>Advanced AI Analytics</p>
+                <img
+                  src="assets/yoga in nature_header_IMG_1044.jpg"
+                  alt="Analytics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          const textData = [
+            {
+              title:
+                "We use AI to unlock unmatched insights and define the value paths",
+              description:
+                "Optimize your projects’ finances and resources. Receive tailored recommendations for the best products and resources while staying on budget with real-time expense monitoring.",
+            },
+            {
+              title: "Boost efficiency with real-time analytics",
+              description:
+                "Track your key performance indicators and make data-driven decisions to optimize workflow and enhance productivity.",
+            },
+            {
+              title: "Seamless integration for smarter business decisions",
+              description:
+                "Leverage powerful AI tools to streamline operations, reduce overhead costs, and maximize ROI.",
+            },
+          ];
+
+          function changeCard(index) {
+            let cards = document.querySelectorAll(".dashboard .card");
+            let sidebarItems = document.querySelectorAll(".sidebar div");
+            let textSection = document.getElementById("text-section");
+
+            sidebarItems.forEach((item) => item.classList.remove("active"));
+            sidebarItems[index].classList.add("active");
+
+            cards.forEach((card) => (card.style.display = "none"));
+            cards[index].style.display = "flex";
+
+            textSection.innerHTML = `<h2>${textData[index].title}</h2><p>${textData[index].description}</p>`;
+          }
+          document.addEventListener("DOMContentLoaded", () => changeCard(0));
+        </script>
+      </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
