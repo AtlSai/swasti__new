@@ -28,6 +28,12 @@
       href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita:wght@400;700&family=Assistant:wght@200..800&family=Caveat:wght@400..700&family=Concert+One&family=Courgette&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Itim&family=League+Spartan:wght@100..900&family=Monoton&family=Neucha&family=Outfit:wght@100..900&family=Permanent+Marker&family=Protest+Revolution&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita:wght@400;700&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Caveat:wght@400..700&family=Concert+One&family=Courgette&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Itim&family=League+Spartan:wght@100..900&family=Monoton&family=Neucha&family=Outfit:wght@100..900&family=Patrick+Hand&family=Permanent+Marker&family=Protest+Revolution&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -69,38 +75,44 @@
             document.getElementById("nav-links").classList.toggle("open");
           });
       </script>
-      <div class="search-container">
-        <div class="search-box">
-          <div class="input-box">
-            <label>Location</label>
-            <input type="text" placeholder="Enter your address" />
-          </div>
-          <div class="verticle"><h4>|</h4></div>
-          <div class="input-box">
-            <label>Start time</label>
-            <input title="date" />
-          </div>
-          <div class="verticle"><h4>|</h4></div>
-          <div class="input-box">
-            <label>End time</label>
-            <input title="date" />
-          </div>
-          <div class="verticle"><h4>|</h4></div>
-          <div class="input-box">
-            <label>Find help today</label>
-            <select title="select">
-              <option>Select category</option>
-              <option>Plumber</option>
-              <option>Electrician</option>
-              <option>Carpenter</option>
-            </select>
-          </div>
-          <div class="verticle"><h4>|</h4></div>
-          <button class="search-btn">
-            Find help now <i class="fas fa-search"></i>
-          </button>
+      <!-- <div class="w-11/12 max-w-5xl mx-auto bg-white p-1 rounded-3xl border border-black mt-5 flex flex-wrap items-center justify-around gap-4">
+        <div class="flex flex-col items-center text-center">
+            <label class="text-sm text-gray-600 font-sans">Location</label>
+            <input type="text" placeholder="Enter your address" class="h-10 w-36 border-none outline-none p-2 rounded-md text-center" />
         </div>
-      </div>
+        <div class="hidden md:block">
+            <h4 class="text-2xl font-light">|</h4>
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <label class="text-sm text-gray-600 font-sans">Start time</label>
+            <input type="date" placeholder="Date" class="h-10 w-36 border-none outline-none p-2 rounded-md text-center" />
+        </div>
+        <div class="hidden md:block">
+            <h4 class="text-2xl font-light">|</h4>
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <label class="text-sm text-gray-600 font-sans">End time</label>
+            <input type="date" placeholder="Date" class="h-10 w-36 border-none outline-none p-2 rounded-md text-center" />
+        </div>
+        <div class="hidden md:block">
+            <h4 class="text-2xl font-light">|</h4>
+        </div>
+        <div class="flex flex-col items-center text-center">
+            <label class="text-sm text-gray-600 font-sans">Find help today</label>
+            <select title="00" class="h-10 w-36 border-none outline-none p-2 rounded-md text-center">
+                <option>Select category</option>
+                <option>Plumber</option>
+                <option>Electrician</option>
+                <option>Carpenter</option>
+            </select>
+        </div>
+        <div class="hidden md:block">
+            <h4 class="text-2xl font-light">|</h4>
+        </div>
+        <button class="bg-blue-800 text-white border-none py-3 px-5 rounded-full cursor-pointer text-sm flex items-center gap-2 justify-center">
+            Find help now <i class="fas fa-search"></i>
+        </button>
+    </div> -->
       <div class="container">
         <div class="left">
           <div class="top-left">
@@ -148,19 +160,19 @@
           </div>
           <div class="bottom-right">
             <div class="bottom-right-1">
-              <img src="assets/" alt="" />
+              <img src="assets/arrow.png" alt="" />
               <h3>Handyman Services</h3>
             </div>
             <div class="bottom-right-2">
               <div class="profile-container">
                 <div class="profile-images">
                   <img
-                    src="https://via.placeholder.com/40"
+                    src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
                     alt="Profile 1"
                     class="profile-img first"
                   />
                   <img
-                    src="https://via.placeholder.com/40"
+                    src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                     alt="Profile 2"
                     class="profile-img second"
                   />
@@ -194,66 +206,323 @@
                 paths
               </h2>
               <p>
-                Optimize your projects’ finances and resources. Receive tailored
+                Optimize your projects finances and resources. Receive tailored
                 recommendations for the best products and resources while
                 staying on budget with real-time expense monitoring.
               </p>
+              <button type="button" class="primary-btn">
+                More About SwastiBharat
+              </button>
             </div>
             <div class="dashboard">
               <div class="card expense-tracking">
-                <img
-                  src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg"
-                  alt="AI Analysis"
-                />
-                <!-- <div class="expense-info">
-                        <p>Expense Tracking</p>
-                        <h3>$11,478 <span style="color: blue;">↑ 9%</span></h3>
-                        <div class="chart">
-                            <span>+22%</span>
-                        </div>
-                    </div> -->
-                <div class="bg-white rounded-lg shadow-lg p-4 w-64">
-                  <div class="text-gray-800 text-lg font-semibold">
-                    Expense Tracking
+                <div class="firstimg">
+                  <img
+                    src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
+                    alt="Workforce Management"
+                  />
+                </div>
+                <div class="workforce">
+                  <i class="fa-solid fa-face-smile"></i>
+                  <p>Optimized Workforce Management</p>
+                  <div class="more_icons">
+                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-business-time"></i>
+                    <i class="fa-solid fa-file"></i>
+                    <i class="fa-solid fa-file-pdf"></i>
                   </div>
-                  <div class="flex items-baseline mt-2">
-                    <div class="text-2xl font-bold text-gray-900">$11,478</div>
-                    <div class="text-blue-500 text-sm ml-2 flex items-center">
-                      <i class="fas fa-arrow-up"></i>
-                      <span class="ml-1">9%</span>
+                </div>
+                <div class="secondimg">
+                  <img
+                    src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
+                    alt="Planning and Scheduling"
+                  />
+                  <div class="profile">
+                    <img
+                      src="assets/yoga in nature_header_IMG_1044.jpg"
+                      alt="User1"
+                    />
+                    <img
+                      src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
+                      alt="User2"
+                    />
+                    <img
+                      src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
+                      alt="User3"
+                    />
+                    <span class="add">+</span>
+                  </div>
+                  <div class="planning">
+                    <p>Automated Planning and Scheduling</p>
+                  </div>
+                </div>
+                <div class="planning">
+                  <p>Automated Planning and Scheduling</p>
+                </div>
+              </div>
+              <div class="card procurement">
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 max-w-4xl"
+                >
+                  <!-- Top Left Card -->
+                  <div
+                    class="bg-white h-16 rounded-lg flex items-center space-x-4"
+                  >
+                    <div class="flex -space-x-2">
+                      <img
+                        alt="Person 1"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/9EtChciS2l5Z-L0dzAtk2WMhglVeEbdRb0qtkrMMBss.jpg"
+                        width="40"
+                      />
+                      <img
+                        alt="Person 2"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/IWuwcPBFp7caIKkm75z1kQEg4mZChSUU8dKN70Y-eH4.jpg"
+                        width="40"
+                      />
+                      <img
+                        alt="Person 3"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/RrwI2_ue1ByyTKq66ztDeWEtW6TBif7E1bxHFKk4SMk.jpg"
+                        width="40"
+                      />
+                    </div>
+                    <div>
+                      <p class="text-gray-700 font-semibold">
+                        Three Taskers in Full Swing.
+                      </p>
                     </div>
                   </div>
-                  <div class="mt-4">
-                    <div class="flex items-end space-x-1">
-                      <div class="bg-blue-500 h-4 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-6 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-8 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-10 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-12 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-14 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-16 w-4 rounded-t-md"></div>
-                      <div class="bg-blue-500 h-18 w-4 rounded-t-md"></div>
+                  <!-- Top Right Card -->
+                  <!-- <div
+                    class="bg-white rounded-lg p-4 flex flex-col items-center justify-center text-center"
+                  >
+                    <p class="text-gray-700 font-semibold">
+                      Timely Status Updates and Progress Reports
+                    </p>
+                    <div class="relative w-24 h-24 mt-4">
+                      <svg
+                        class="absolute top-0 left-0 w-full h-full"
+                        viewbox="0 0 36 36"
+                      >
+                        <path
+                          class="text-gray-200"
+                          d="M18 2.0845
+                                         a 15.9155 15.9155 0 0 1 0 31.831
+                                         a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none"
+                          stroke-width="2"
+                        ></path>
+                        <path
+                          class="text-blue-500"
+                          d="M18 2.0845
+                                         a 15.9155 15.9155 0 0 1 0 31.831"
+                          fill="none"
+                          stroke-dasharray="35, 100"
+                          stroke-width="2"
+                        ></path>
+                      </svg>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span class="text-2xl font-semibold text-gray-700">
+                          35%
+                        </span>
+                      </div>
+                    </div>
+                    <p class="text-gray-500 text-sm mt-2">
+                      PROJECT IN PROGRESS
+                    </p>
+                  </div> -->
+
+                  <div class="bg-white p-1 rounded-lg shadow-lg text-center">
+                    <h2 class="text-lg font-semibold mb-4">
+                      Timely Status Updates and Progress Reports
+                    </h2>
+                    <div class="relative w-32 h-32 mx-auto mb-4">
+                      <svg
+                        class="absolute top-0 left-0 w-full h-full"
+                        viewBox="0 0 36 36"
+                      >
+                        <path
+                          class="text-gray-200"
+                          d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                          fill="none"
+                          stroke-width="2"
+                          stroke="currentColor"
+                        />
+                        <path
+                          class="text-blue-500"
+                          d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831"
+                          fill="none"
+                          stroke-width="2"
+                          stroke-dasharray="42, 100"
+                          stroke="currentColor"
+                        />
+                      </svg>
+                      <div
+                        class="absolute inset-0 flex items-center justify-center"
+                      >
+                        <span class="text-2xl font-semibold">42%</span>
+                      </div>
+                    </div>
+                    <p class="text-sm font-medium text-gray-600">
+                      PROJECT IN PROGRESS
+                    </p>
+                  </div>
+
+                  <!-- Bottom Left Card -->
+                  <div
+                    class="bg-white mt-[-180px] h-[230px] rounded-lg p-4 flex flex-col items-center space-x-4"
+                  >
+                    <div class="text-blue-500 text-4xl font-bold">+</div>
+                    <div class="flex flex-col items-center">
+                      <p class="text-gray-700 font-semibold">44%</p>
+                      <p class="text-gray-500">
+                        Comprehensive Notes And Summaries With Action Items
+                      </p>
+                    </div>
+                    <img
+                      alt="Person holding a notebook"
+                      class="w-16 h-16 rounded-lg"
+                      height="60"
+                      src="https://storage.googleapis.com/a1aa/image/jP0RXHM_3Y2njQWm1M-StCf1goYNJBDgPFdswGeV23o.jpg"
+                      width="60"
+                    />
+                  </div>
+                  <!-- Bottom Right Card -->
+                  <!-- <div
+                    class="bg-white rounded-lg p-4 flex flex-col items-center justify-center text-center"
+                  >
+                    <div class="flex -space-x-2">
+                      <img
+                        alt="Person 1"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/9EtChciS2l5Z-L0dzAtk2WMhglVeEbdRb0qtkrMMBss.jpg"
+                        width="40"
+                      />
+                      <img
+                        alt="Person 2"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/IWuwcPBFp7caIKkm75z1kQEg4mZChSUU8dKN70Y-eH4.jpg"
+                        width="40"
+                      />
+                      <img
+                        alt="Person 3"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/RrwI2_ue1ByyTKq66ztDeWEtW6TBif7E1bxHFKk4SMk.jpg"
+                        width="40"
+                      />
+                      <img
+                        alt="Person 4"
+                        class="w-10 h-10 rounded-full border-2 border-white"
+                        height="40"
+                        src="https://storage.googleapis.com/a1aa/image/gbRDMaiS_cbn4QttmDgP1FW9CV-BiOY5pby7ZfHgORc.jpg"
+                        width="40"
+                      />
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-gray-700 font-semibold">4+</p>
+                    </div>
+                  </div> -->
+
+                  <div
+                    class="bg-blue-500 p-4 rounded-lg grid grid-cols-2 gap-2 w-40 h-40"
+                  >
+                    <img
+                      alt="Person working with a tool"
+                      class="w-[50px] h-full object-cover rounded-full"
+                      height="100"
+                      src="https://storage.googleapis.com/a1aa/image/MTqJjZfwyvP9n_DyP_eSYnD35ucvOKd_L-lzb-p_gtg.jpg"
+                      width="100"
+                    />
+                    <img
+                      alt="Person working on a laptop"
+                      class="w-full h-full object-cover rounded-full"
+                      height="100"
+                      src="https://storage.googleapis.com/a1aa/image/RtpgKvgcVCCjjt-0VhdQIxjNdlxS_11iA6WkoYqIp0Q.jpg"
+                      width="100"
+                    />
+                    <img
+                      alt="Person fixing a light bulb"
+                      class="w-full h-full object-cover rounded-full"
+                      height="100"
+                      src="https://storage.googleapis.com/a1aa/image/yKpYoT-hSXFWmPEJ4flUTTCqTzbJhbUXcu7nKzKXq28.jpg"
+                      width="100"
+                    />
+                    <div
+                      class="flex items-center justify-center bg-white rounded-full"
+                    >
+                      <span class="text-black text-xl font-semibold"> 5+ </span>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="card procurement">
-                <p>Optimized Sourcing and Procurements</p>
-                <img
-                  src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
-                  alt="Team"
-                />
-                <img
-                  src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
-                  alt="Team"
-                />
-              </div>
               <div class="card analytics">
-                <p>Advanced AI Analytics</p>
-                <img
-                  src="assets/yoga in nature_header_IMG_1044.jpg"
-                  alt="Analytics"
-                />
+                <!-- top-left-box -->
+                <div class="left3rd">
+                  <div class="img-ana">
+                    <img
+                      src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg"
+                      alt=""
+                    />
+                  </div>
+                  <!-- bottom-left-box -->
+                  <div>
+                    <div class="bg-white rounded-lg shadow-lg p-4 w-64">
+                      <div class="text-gray-800 text-lg font-semibold">
+                        Expense Tracking
+                      </div>
+                      <div class="flex items-baseline mt-2">
+                        <div class="text-2xl font-bold text-black">$11,478</div>
+                        <div
+                          class="text-blue-500 text-sm ml-2 flex items-center"
+                        >
+                          <i class="fas fa-arrow-up"></i>
+                          <span class="ml-1">9%</span>
+                        </div>
+                      </div>
+                      <div class="mt-4">
+                        <div class="flex items-end space-x-1">
+                          <div class="bg-blue-500 h-6 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-8 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-10 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-12 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-14 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-16 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-18 w-4 rounded-t-md"></div>
+                          <div class="bg-blue-500 h-20 w-4 rounded-t-md"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="right3rd">
+                    <div class="top-right-3rd">
+                        <div class="bg-white rounded-lg shadow-lg h-[200px] w-[180px] text-center">
+                            <h2 class="text-xl font-semibold mb-4">
+                             Optimized Sourcing and Procurements
+                            </h2>
+                            <div class="flex justify-center space-x-4">
+                             <img alt="A woman holding a tablet and looking at a computer screen in an office setting" class="rounded-lg" height="70" src="https://storage.googleapis.com/a1aa/image/WFN9xXHBdZ2_3Ehi-ONflmREZzfnMzVuw5HWipM0YAU.jpg" width="50"/>
+                             <img alt="A man and a woman discussing and handling a package in a warehouse" class="rounded-lg" height="70" src="https://storage.googleapis.com/a1aa/image/8ZlTrs5Mm2ZKrvjV2PjuBW3aiT3dDiIT4fCYwn46Pm8.jpg" width="50"/>
+                            </div>
+                           </div>
+                          </body>
+                         </html>
+                         
+                    </div>
+                </div>
               </div>
             </div>
           </div>
