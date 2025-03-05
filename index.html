@@ -219,7 +219,23 @@
       </div>
       <div class="card_main">
         <div class="sidebar">
-          <div onclick="changeCard(0)" class="active">1</div>
+          <div
+            onclick="changeCard(0)"
+            class="active hover:bg-blue-700"
+            style="
+              background-color: #7c7a7a;
+              border-radius: 50%;
+              height: 20px;
+              width: 20px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              cursor: pointer;
+              color: white;
+            "
+          >
+            1
+          </div>
           <div onclick="changeCard(1)" class="two">2</div>
           <div onclick="changeCard(2)" class="three">3</div>
         </div>
@@ -276,6 +292,7 @@
                 <span class="add">+</span>
               </div>
             </div>
+
             <div class="planning">
               <p>Automated Planning and Scheduling</p>
             </div>
@@ -429,8 +446,9 @@
               Join our platform as a seller and connect with customers seeking
               quality products for their tasks.
             </p>
-            <button class="cta-button">Become a Seller</button>
+            <!-- <button class="cta-button">Become a Seller</button> -->
             <div class="nav-controls">
+              <button class="cta-button">Become a Seller</button>
               <span>1/3</span>
               <i class="fas fa-arrow-left" onclick="showCard(3)"></i>
               <i class="fas fa-arrow-right" onclick="showCard(2)"></i>
@@ -456,10 +474,9 @@
             </div>
             <div class="side-images">
               <img
+                class="first-side-upper"
                 alt="Person cleaning a kitchen"
-                height="100"
                 src="https://placehold.co/100x100"
-                width="100"
               />
               <img
                 alt="Person cleaning a bed"
@@ -480,8 +497,9 @@
               Join our platform as a seller and connect with customers seeking
               quality products for their tasks.
             </p>
-            <button class="cta-button">Become a Seller</button>
+            <!-- <button class="cta-button">Become a Seller</button> -->
             <div class="nav-controls">
+              <button class="cta-button">Become a Seller</button>
               <span>2/3</span>
               <i class="fas fa-arrow-left" onclick="showCard(1)"></i>
               <i class="fas fa-arrow-right" onclick="showCard(3)"></i>
@@ -504,10 +522,9 @@
             </div>
             <div class="side-images">
               <img
+                class="second-side-upper"
                 alt="Person cleaning a kitchen"
-                height="100"
                 src="https://placehold.co/100x100"
-                width="100"
               />
               <img
                 alt="Person cleaning a bed"
@@ -528,8 +545,9 @@
               Join our platform as a seller and connect with customers seeking
               quality products for their tasks.
             </p>
-            <button class="cta-button">Become a Seller</button>
+            <!-- <button class="cta-button">Become a Seller</button> -->
             <div class="nav-controls">
+              <button class="cta-button">Become a Seller</button>
               <span>3/3</span>
               <i class="fas fa-arrow-left" onclick="showCard(2)"></i>
               <i class="fas fa-arrow-right" onclick="showCard(1)"></i>
@@ -553,10 +571,9 @@
             </div>
             <div class="side-images">
               <img
+                class="third-side-upper"
                 alt="Person cleaning a kitchen"
-                height="100"
                 src="https://placehold.co/100x100"
-                width="100"
               />
               <img
                 alt="Person cleaning a bed"
@@ -569,20 +586,142 @@
         </div>
       </div>
     </div>
+    <div class="fourth">
+      <div class="fourth-card">
+        <div class="container-left">
+          <h1 class="container__title">
+            Your satisfaction, guaranteed, as a
+            <span class="customer-images">
+              <img
+                class="customer-images__image"
+                src="https://storage.googleapis.com/a1aa/image/LiOVy_Nffkm0pC9C_rwdwUcg4RsoxJ7AVJCGkSR2ds0.jpg"
+                alt="Customer 1"
+              />
+              <img
+                class="customer-images__image"
+                src="https://storage.googleapis.com/a1aa/image/z8fsi-K4mQ8WsbI9Xi7vZ6AFIe8tYRSz5v0J_uiNpzw.jpg"
+                alt="Customer 2"
+              />
+              <img
+                class="customer-images__image"
+                src="https://storage.googleapis.com/a1aa/image/Iq6BvabHCRA3XccE4lsaOk5YFwANwx_mnS67OOGG4-4.jpg"
+                alt="Customer 3"
+              />
+            </span>
+            customer!
+          </h1>
+          <p class="container__description">
+            Discover the thrill of innovation with us. Unleash your potential
+            today!
+          </p>
+          <div class="features">
+            <div class="feature">
+              <img
+                class="feature__icon"
+                src="https://storage.googleapis.com/a1aa/image/keL36N3xS7HXNwlar95DiKxGd1ggmGMtAwLpV3m-u-0.jpg"
+                alt="Happiness Pledge Icon"
+              />
+              <div>
+                <h2 class="feature__title">Happiness Pledge</h2>
+                <p class="feature__description">
+                  // If you're not satisfied, we'll work to make it right.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <img
+                class="feature__icon"
+                src="https://storage.googleapis.com/a1aa/image/TQkwcuGsC-V09FmGHzVTQWXVXCc5UJia-VgIe_9_xOc.jpg"
+                alt="Vetted Taskers Icon"
+              />
+              <div>
+                <h2 class="feature__title">Vetted Taskers</h2>
+                <p class="feature__description">
+                  // Taskers are always background checked before joining the
+                  platform.
+                </p>
+              </div>
+            </div>
+            <div class="feature">
+              <img
+                class="feature__icon"
+                src="https://storage.googleapis.com/a1aa/image/m8iptHIwGn9RjNggOssxZtW1FmAbZpbIhWvN5fZC-g8.jpg"
+                alt="Dedicated Support Icon"
+              />
+              <div>
+                <h2 class="feature__title">Dedicated Support</h2>
+                <p class="feature__description">
+                  // Friendly service when you need us - every day of the week.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button class="button">Join Now</button>
+        </div>
+        <div class="container-right">
+          <h1 class="title">Even superheroes need help!</h1>
+          <p class="subtitle">
+            You focus on the project goals when we find you proper taskers.
+          </p>
+          <div class="content">
+            <div class="item">
+              <img
+                height="150px"
+                width="150px"
+                src="https://storage.googleapis.com/a1aa/image/BRmAS2sbGbReoX9Ao4n5eCljYCsbZrAEEbaDjH9Ac3M.jpg"
+                alt="A happy couple enjoying time together"
+              />
+              <div class="item-content">
+                <p>
+                  Around / 100,000 / people get
+                  <img
+                    src="https://storage.googleapis.com/a1aa/image/6v0k55hev28vM9B1WjgULfzTl87xCMXujAsRFU22fkE.jpg"
+                    alt="Profile picture of a person"
+                  />
+                  <img
+                    src="https://storage.googleapis.com/a1aa/image/6v0k55hev28vM9B1WjgULfzTl87xCMXujAsRFU22fkE.jpg"
+                    alt="Profile picture of a person"
+                  />
+                  <img
+                    src="https://storage.googleapis.com/a1aa/image/6v0k55hev28vM9B1WjgULfzTl87xCMXujAsRFU22fkE.jpg"
+                    alt="Profile picture of a person"
+                  />
+                  help in platform.
+                </p>
+                <button>read more</button>
+              </div>
+            </div>
+            <div class="itemm">
+              <img
+                height="100px"
+                width="100px"
+                src="https://storage.googleapis.com/a1aa/image/LsuhvvMgRwdeTlNXDqUJIBG2pUNYl5mlcXaj1kNOpuI.jpg"
+                alt="A group of friends taking a selfie"
+              />
+              <div class="item-content item-content-dark">
+                <p>Happy customers</p>
+                <p class="percentage">43%</p>
+              </div>
+            </div>
+          </div>
+          <button class="start-button">Start your own project</button>
+        </div>
+      </div>
+    </div>
     <div class="footer">
       <div class="footer-container">
         <div class="footer-header">
           <div class="footer-logo">
-            <img
+            <!-- <img
               src="https://storage.googleapis.com/a1aa/image/TWqYZhGbRYvEkq7zvZEikery1pBWalb216hfa5wsZhs.jpg"
               alt="Sarwisi logo"
-            />
-            <span>Sarwisi<span class="font-light">.com</span></span>
+            /> -->
+            <span>SwastiBharat<span class="font-light">.com</span></span>
           </div>
           <div class="footer-tagline">Job well-done.</div>
         </div>
         <div class="footer-grid">
-          <div>
+          <div class="box-footer">
             <div class="footer-grid-text">
               <h1>Office Services<i class="fas fa-chevron-down"></i></h1>
             </div>
@@ -596,7 +735,7 @@
               <h1>Miscellaneous<i class="fas fa-chevron-down"></i></h1>
             </div>
           </div>
-          <div>
+          <div class="box-footer">
             <div class="footer-grid-text">
               <h1>Home Repairs<i class="fas fa-chevron-down"></i></h1>
             </div>
@@ -610,7 +749,7 @@
               <h1>Farm Work<i class="fas fa-chevron-down"></i></h1>
             </div>
           </div>
-          <div>
+          <div class="box-footer">
             <div class="footer-grid-text">
               <h1>
                 Mounting & Installation<i class="fas fa-chevron-down"></i>
@@ -628,7 +767,7 @@
               <h1>Warehouse work<i class="fas fa-chevron-down"></i></h1>
             </div>
           </div>
-          <div>
+          <div class="box-footer">
             <div class="footer-grid-text">
               <h1>Plumbing<i class="fas fa-chevron-down"></i></h1>
             </div>
@@ -642,7 +781,7 @@
               <h1>Live stock<i class="fas fa-chevron-down"></i></h1>
             </div>
           </div>
-          <div>
+          <div class="box-footer">
             <div class="footer-grid-text">
               <h1>Cleaning<i class="fas fa-chevron-down"></i></h1>
             </div>
@@ -656,7 +795,7 @@
               <h1>Automotive & Parts<i class="fas fa-chevron-down"></i></h1>
             </div>
           </div>
-          <div>
+          <!-- <div>
             <div class="footer-grid-text">
               <h1>Parties + Events<i class="fas fa-chevron-down"></i></h1>
             </div>
@@ -666,7 +805,7 @@
             <div class="footer-grid-text">
               <h1>Carpooling<i class="fas fa-chevron-down"></i></h1>
             </div>
-          </div>
+          </div> -->
         </div>
         <section class="footer-section">
           <div class="footer-content">
@@ -736,22 +875,24 @@
             </div>
             <div class="mobile-app">
               <h3>Mobile app</h3>
-              <a href="#">
-                <img
-                  alt="Google Play Store icon"
-                  height="40"
-                  src="https://storage.googleapis.com/a1aa/image/ooWfvpdTrrQtcNyyy10sOIwQZARV7iXtNqwloODHC4Q.jpg"
-                  width="40"
-                />
-              </a>
-              <a href="#">
-                <img
-                  alt="Apple App Store icon"
-                  height="40"
-                  src="https://storage.googleapis.com/a1aa/image/zQ04ZFBGanvoZUPBwURE6oYULNt7vxIiDW9CHG_F81A.jpg"
-                  width="40"
-                />
-              </a>
+              <div class="mobile-img">
+                <a href="#">
+                  <img
+                    alt="Google Play Store icon"
+                    height="40"
+                    src="https://storage.googleapis.com/a1aa/image/ooWfvpdTrrQtcNyyy10sOIwQZARV7iXtNqwloODHC4Q.jpg"
+                    width="40"
+                  />
+                </a>
+                <a href="#">
+                  <img
+                    alt="Apple App Store icon"
+                    height="40"
+                    src="https://storage.googleapis.com/a1aa/image/zQ04ZFBGanvoZUPBwURE6oYULNt7vxIiDW9CHG_F81A.jpg"
+                    width="40"
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div class="back-to-top">
@@ -772,26 +913,28 @@
                   </select>
                 </div>
                 <div class="relative">
-                  <select title="option">
+                  <select class="select" title="option">
                     <option>USD</option>
                     <!-- Add more currencies as needed -->
                   </select>
                 </div>
               </div>
-              <div class="flex space-x-4">
-                <a href="#" class="text-white"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" class="text-white"><i class="fab fa-xing"></i></a>
-                <a href="#" class="text-white"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" class="text-white"
-                  ><i class="fab fa-pinterest-p"></i
-                ></a>
+              <div class="social-icons">
+                <div class="flex space-x-4">
+                  <a href="#" class="text-white"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a href="#" class="text-white"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a href="#" class="text-white"><i class="fab fa-xing"></i></a>
+                  <a href="#" class="text-white"
+                    ><i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a href="#" class="text-white"
+                    ><i class="fab fa-pinterest-p"></i
+                  ></a>
+                </div>
               </div>
             </div>
             <div class="flex justify-between items-center">
