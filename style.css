@@ -165,7 +165,7 @@
     font-size: 15px;
     height: 25px;
     width: 25px;
-    background-color:#0834d3;
+    background-color: #0834d3;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -824,7 +824,7 @@
 
 .text {
     height: 90px;
-    width: 90%;
+    width: 93%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -1712,7 +1712,7 @@
 }
 
 .wrapper {
-    max-width: 1200px;
+    width: 94%;
     margin: 0 auto;
     padding: 24px;
     height: auto;
@@ -1721,7 +1721,7 @@
 .content-box {
     margin: auto;
     height: 400px;
-    width: 95%;
+    width: 100%;
     background-color: #0B0D39;
     border-radius: 12px;
     padding: 32px;
@@ -2457,6 +2457,17 @@
     margin: auto;
 }
 
+.selected {
+    background-color: #3b3bda;
+    /* Change color */
+    color: white;
+    /* Change text color */
+    border-radius: 5px;
+    height: 30px;
+    width: auto;
+    padding: 10px;
+}
+
 @media screen and (max-width: 1270px) {
     .yoga-second-upper {
         flex-direction: column;
@@ -2465,7 +2476,8 @@
     .yoga-second-upper-left {
         width: 100% !important;
     }
-    .yoga-second{
+
+    .yoga-second {
         height: auto;
     }
 }
@@ -2498,23 +2510,21 @@
     justify-content: space-around;
 }
 
-/* .hr{
-   height: 20px;
-   background-color: #5A5A5A;
-   font-size: 20px;
-   width: 89%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   margin-top: 20px;
-   margin: auto;
-   color: #070707;
+.selected {
+    background-color: #3b3bda !important;
+    /* Highlight color */
+    color: white !important;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.hr hr{
-    color: black;
-} */
-
+.selectedd {
+    background-color: #3b3bda !important;
+    /* Highlight color */
+    color: white !important;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
 
 li {
     display: flex;
@@ -2523,7 +2533,8 @@ li {
     cursor: pointer;
     /* margin-top: 20px; */
 }
-li:hover{
+
+li:hover {
     color: #007bff;
     font-weight: 600;
 }
@@ -2563,12 +2574,12 @@ li:hover{
     justify-content: center;
 }
 
-.toggleBtn:hover{
+.toggleBtn:hover {
     background-color: #007bff;
     color: white;
 }
 
-.toggleBtn i:hover{
+.toggleBtn i:hover {
     color: white;
 }
 
@@ -2591,11 +2602,12 @@ li:hover{
 }
 
 @media screen and (max-width: 720px) {
-    .featuresSection{
+    .featuresSection {
         height: auto;
         gap: 10px;
     }
-    .yoga-second-upper{
+
+    .yoga-second-upper {
         height: auto;
         gap: 10px;
     }
@@ -2715,7 +2727,7 @@ li:hover{
     justify-content: center;
 }
 
-.arrow:hover{
+.arrow:hover {
     height: 30px;
     width: 30px;
     background-color: #007bff;
@@ -2813,6 +2825,10 @@ li:hover{
     /* background-color: coral; */
     height: 100vh;
     width: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
 *,
@@ -2825,13 +2841,15 @@ li:hover{
 
 .projectHeading {
     height: 100px;
-    width: 95%;
+    width: 94%;
     /* background-color: #707f8f; */
     margin: auto;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
 }
 
 #imageSlider {
@@ -2852,15 +2870,15 @@ li:hover{
     float: right;
 }
 
-.navArrow{
-  /* background-color: #007bff; */
-  color: rgb(28, 44, 170);
-  background-color: white;
-  font-size: 30px;
-  cursor: pointer;
+.navArrow {
+    /* background-color: #007bff; */
+    color: rgb(28, 44, 170);
+    background-color: white;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.navArrow:hover{
+.navArrow:hover {
     font-size: 31px;
 }
 
@@ -2876,15 +2894,16 @@ li:hover{
 .slider-wrapper {
     position: relative;
     margin: 20px auto;
-    width: 100%; /* Adjust as needed */
+    width: 100%;
+    /* Adjust as needed */
     /* height: 20%; */
-  }
+}
 
-  /* The viewport shows only 4 cards */
+/* The viewport shows only 4 cards */
 .slider-viewport {
     overflow: hidden;
     width: 100%;
-  }
+}
 
 #sliderContent {
     display: flex;
@@ -2914,7 +2933,7 @@ li:hover{
     border-radius: 15px;
 }
 
-.btn-detail{
+.btn-detail {
     height: 40px;
     width: 150px;
     /* background-color: darkred; */
@@ -2965,7 +2984,7 @@ li:hover{
 
 
 
-.yoga-class{
+.yoga-class {
     /* background-color: burlywood; */
     height: auto;
     width: 100%;
@@ -2974,87 +2993,88 @@ li:hover{
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.taskDiv{
-  /* border: 1px solid white; */
-  /* border-radius: 30px; */
-  height: auto !important;
-  width: 94%;
+.taskDiv {
+    /* border: 1px solid white; */
+    /* border-radius: 30px; */
+    height: auto !important;
+    width: 94%;
 
-  margin: auto;
-  /* background-color: #1954d3; */
-  /* margin-bottom: 100px; */
-  justify-content: center;
-  /* overflow: hidden; */
-  display: flex;
-  flex-direction: column;
+    margin: auto;
+    /* background-color: #1954d3; */
+    /* margin-bottom: 100px; */
+    justify-content: center;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
 }
 
-.taskHeading{
+.taskHeading {
     height: 80px;
     width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 25px;
-  font-weight: bold;
-  /* float: left; */
-  /* margin-left: 70px; */
-  /* margin-top: 20px; */
-  /* background-color: chocolate; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    /* float: left; */
+    /* margin-left: 70px; */
+    /* margin-top: 20px; */
+    /* background-color: chocolate; */
 }
 
-.taskHeading p{
+.taskHeading p {
     font-size: 25px;
 }
 
-.taskBtn{
-  background-color: #222;
-  color: white;
-  height: 30px;
-  width: 110px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-  border-radius: 10px;
-  /* margin-left: 820px; */
+.taskBtn {
+    background-color: #222;
+    color: white;
+    height: 30px;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    border-radius: 10px;
+    /* margin-left: 820px; */
 }
 
-.taskBtn:hover{
-  background-color: white;
-  color: #222;
-  transition: 0.6s;
+.taskBtn:hover {
+    background-color: white;
+    color: #222;
+    transition: 0.6s;
 }
 
-.category{
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  font-weight: 550;
-  background-color: white;
-  border: 1px ;
-  border-radius: 15px;
-  height: 20px;
-  width: 70px;
-  margin-top: 10px;
-  margin-left: 10px;
-  padding-left: 10px;
-  opacity: .7;
-  cursor: pointer;
-  padding-right: -19px;
+.category {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 550;
+    background-color: white;
+    border: 1px;
+    border-radius: 15px;
+    height: 20px;
+    width: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    opacity: .7;
+    cursor: pointer;
+    padding-right: -19px;
 }
 
-.topRightIcon{
-  color: white;
-  float: right;
-  margin-top: -18px;
-  margin-right: 10px;
+.topRightIcon {
+    color: white;
+    float: right;
+    margin-top: -18px;
+    margin-right: 10px;
 }
 
 /* Style for the slider buttons */
@@ -3069,169 +3089,168 @@ box-sizing: border-box;
     cursor: pointer;
     z-index: 10;
     border-radius: 50%;
-  }
+}
 
-  .prev-btn {
+.prev-btn {
     left: 10px;
-  }
-  
-  .next-btn {
+}
+
+.next-btn {
     right: 10px;
-  }
+}
 
 .container {
-width: 100%;
-display: flex;
-justify-content: center;
-height: 380px;
-gap: 10px;
-height: 460px;
-/* display: flex; */
-/* transition: transform 0.5s ease-in-out; */
-
-> div {
-  flex: 0 0 180px;
-  border-radius: 0.5rem;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-  box-shadow: 1px 5px 15px white;
-  position: relative;
-  overflow: hidden;
-  top: 30px;
-
-  &:nth-of-type(1) {
-    background: url("assets/0eab79f24fe1570e091db2d527495450_t.jpeg")
-      no-repeat 70% / cover;
-      height: 420px;
-      width: 300px;
-  }
-  &:nth-of-type(2) {
-    background: url("assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg")
-      no-repeat 50% / cover;
-      height: 420px;
-      width: 300px;
-  }
-  &:nth-of-type(3) {
-    background: url("assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg")
-      no-repeat 50% / cover;
-      height: 420px;
-      width: 300px;
-  }
-  &:nth-of-type(4) {
-    background: url("assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg")
-      no-repeat 50% / cover ;
-      height: 420px;
-      width: 300px;
-  }
-  &:nth-of-type(5) {
-      background: url("assets/0eab79f24fe1570e091db2d527495450_t.jpeg")
-        no-repeat 70% / cover;
-        height: 420px;
-        width: 300px;
-  }
-  &:nth-of-type(6) {
-      background: url("assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg")
-        no-repeat 20% / cover;
-        height: 420px;
-        width: 300px;
-  }
-
-  h2{
-    font-weight: 500;
-  }
-
-  .class-long{
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
+    justify-content: center;
+    height: 380px;
+    gap: 10px;
+    height: 460px;
+    /* display: flex; */
+    /* transition: transform 0.5s ease-in-out; */
 
-  .content {
-    /* padding-top: -10px; */
-    font-size: 13px;
-    font-weight: 400;
-    color: #fff;
-    display: flex;
-    align-items: self-start;
-    padding: 20px;
-    opacity: 0;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-end;
-    background: rgb(2, 2, 46);
-    background: linear-gradient(
-      0deg,
-      rgba(2, 2, 46, 0.6755077030812324) 0%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    transform: translatey(100%);
-    transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
-    visibility: hidden;
+    >div {
+        flex: 0 0 180px;
+        border-radius: 0.5rem;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+        box-shadow: 1px 5px 15px white;
+        position: relative;
+        overflow: hidden;
+        top: 30px;
 
-    span {
-      display: block;
-      margin-top: 5px;
-      font-size: 13px;
-      font-weight: 100;
+        &:nth-of-type(1) {
+            background: url("assets/0eab79f24fe1570e091db2d527495450_t.jpeg") no-repeat 70% / cover;
+            height: 420px;
+            width: 300px;
+        }
+
+        &:nth-of-type(2) {
+            background: url("assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg") no-repeat 50% / cover;
+            height: 420px;
+            width: 300px;
+        }
+
+        &:nth-of-type(3) {
+            background: url("assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg") no-repeat 50% / cover;
+            height: 420px;
+            width: 300px;
+        }
+
+        &:nth-of-type(4) {
+            background: url("assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg") no-repeat 50% / cover;
+            height: 420px;
+            width: 300px;
+        }
+
+        &:nth-of-type(5) {
+            background: url("assets/0eab79f24fe1570e091db2d527495450_t.jpeg") no-repeat 70% / cover;
+            height: 420px;
+            width: 300px;
+        }
+
+        &:nth-of-type(6) {
+            background: url("assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg") no-repeat 20% / cover;
+            height: 420px;
+            width: 300px;
+        }
+
+        h2 {
+            font-weight: 500;
+        }
+
+        .class-long {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .content {
+            /* padding-top: -10px; */
+            font-size: 13px;
+            font-weight: 400;
+            color: #fff;
+            display: flex;
+            align-items: self-start;
+            padding: 20px;
+            opacity: 0;
+            flex-direction: column;
+            height: 100%;
+            justify-content: flex-end;
+            background: rgb(2, 2, 46);
+            background: linear-gradient(0deg,
+                    rgba(2, 2, 46, 0.6755077030812324) 0%,
+                    rgba(255, 255, 255, 0) 100%);
+            transform: translatey(100%);
+            transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+            visibility: hidden;
+
+            span {
+                display: block;
+                margin-top: 5px;
+                font-size: 13px;
+                font-weight: 100;
+            }
+        }
+
+        &:hover {
+            flex: 0 0 250px;
+            box-shadow: 1px 3px 15px;
+        }
+
+        &:hover .content {
+            opacity: 1;
+            transform: translatey(0%);
+            visibility: visible;
+        }
     }
-  }
-
-  &:hover {
-    flex: 0 0 250px;
-    box-shadow: 1px 3px 15px;
-  }
-
-  &:hover .content {
-    opacity: 1;
-    transform: translatey(0%);
-    visibility: visible;
-  }
-}
 }
 
-.contentBtn{
-  background-color: white;
-  color: #222;
-  height: 35px;
-  width: 180px;
-  font-weight: bold;
-  border: 1px;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+.contentBtn {
+    background-color: white;
+    color: #222;
+    height: 35px;
+    width: 180px;
+    font-weight: bold;
+    border: 1px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
-.contentBtn:hover{
-  background-color: #222;
-  color: white;
-  transition: 0.7s;
+.contentBtn:hover {
+    background-color: #222;
+    color: white;
+    transition: 0.7s;
 }
 
-.hireIcon{
-  margin-left: 70px;
+.hireIcon {
+    margin-left: 70px;
 }
 
-.projectHeading{
-display: flex;
-justify-content: space-between;
-font-size: 25px;
-font-weight: bold;
-margin-left: 65px;
-margin-top: 20px;
+/* .projectHeading {
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 65px;
+    margin-top: 20px;
+} */
+
+.projectBtn {
+    background-color: #222;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    /* margin-right: 70px; */
+    font-size: 16px;
 }
 
-.projectBtn{
-background-color: #222;
-color: white;
-height: 35px;
-width: 90px;
-border-radius: 10px;
-margin-right: 70px;
-}
-
-.projectBtn:hover{
-background-color: white;
-color: #222;
-transition: 0.6s;
+.projectBtn:hover {
+    background-color: white;
+    color: #222;
+    transition: 0.6s;
+    border: 1px solid black;
 }
