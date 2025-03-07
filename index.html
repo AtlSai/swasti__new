@@ -28,6 +28,12 @@
       href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita:wght@400;700&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Caveat:wght@400..700&family=Concert+One&family=Courgette&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Itim&family=League+Spartan:wght@100..900&family=Monoton&family=Neucha&family=Outfit:wght@100..900&family=Patrick+Hand&family=Permanent+Marker&family=Protest+Revolution&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aclonica&family=Amita:wght@400;700&family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Assistant:wght@200..800&family=Baloo+2:wght@400..800&family=Caveat:wght@400..700&family=Concert+One&family=Courgette&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hachi+Maru+Pop&family=Itim&family=League+Spartan:wght@100..900&family=Monoton&family=Moon+Dance&family=Neucha&family=Outfit:wght@100..900&family=Patrick+Hand&family=Permanent+Marker&family=Protest+Revolution&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Shadows+Into+Light&family=Signika:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="fade-in">
     <div class="nav_first1">
@@ -38,40 +44,23 @@
       </div>
       <hr />
     </div>
-    <nav class="navbar flex justify-around items-center p-4 shadow-md bg-white">
-      <div class="logo text-2xl font-bold text-blue-800 font-caveat">
-        MyLogo
-      </div>
-      <div class="hamburger text-2xl cursor-pointer md:hidden">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="nav-links hidden md:flex gap-5 font-public-sans">
-        <a href="#" class="text-gray-700 font-semibold hover:text-blue-800"
-          >Home</a
-        >
-        <a href="#" class="text-gray-700 font-semibold hover:text-blue-800"
-          >About</a
-        >
-        <a href="#" class="text-gray-700 font-semibold hover:text-blue-800"
-          >Services</a
-        >
-        <a href="#" class="text-gray-700 font-semibold hover:text-blue-800"
-          >Contact</a
-        >
-      </div>
-      <div class="rightside hidden md:flex items-center gap-4">
-        <i class="fas fa-search text-xl cursor-pointer"></i>
-        <button
-          class="login-button border border-black rounded-full h-10 w-24 flex items-center justify-center font-public-sans hover:bg-gray-600 hover:text-white hover:border-white"
-        >
-          Login
-          <i class="fas fa-sign-in-alt ml-2 text-blue-900"></i>
-        </button>
+    <nav class="navbar">
+      <div class="logo">SwastiBharat</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav-third">
+        <i class="fa-solid fa-globe" style="cursor: pointer;"></i>
+        <button><i class="fa-solid fa-user"></i>Login</button>
       </div>
     </nav>
     <div class="search-contain fade-in">
       <div
-        class="w-11/12 max-w-5xl mx-auto bg-white p-1 rounded-3xl border border-black mt-5 flex flex-wrap items-center justify-around gap-4"
+        class="w-11/12 max-w-5xl mx-auto bg-white p-1 rounded-3xl border border-black mt-2 flex flex-wrap items-center justify-around gap-4"
       >
         <div class="flex flex-col items-center text-center">
           <label class="text-sm text-gray-600 font-sans">Location</label>
@@ -128,7 +117,7 @@
         </button>
       </div>
     </div>
-    <div class="container">
+    <div class="container1st">
       <div class="left animate-slide-in-right">
         <div class="top-left">
           <div class="btns">
@@ -213,6 +202,276 @@
         </div>
       </div>
     </div>
+    <div class="yoga-second">
+      <div class="upper-yoga">
+      <div class="yoga-second-upper">
+        <div class="yoga-second-upper-left">
+          <li>
+            <i
+              class="fa-solid fa-circle-arrow-left"
+              style="color: #3b3bda; font-size: 20px"
+            ></i>
+          </li>
+          <li class="assembly">Ashtanga yoga</li>
+          <li class="mounting">
+            <!-- <FontAwesomeIcon icon={faVolcano} size="2x" /><br /> -->
+            Kundalini yoga
+          </li>
+          <li class="cleaning">
+            <!-- <FontAwesomeIcon icon={faBroom} size="2x" /> <br /> -->
+            Yin yoga
+          </li>
+          <li class="homeRepairing">
+            <!-- <FontAwesomeIcon icon={faHammer} size="2x"/> <br /> -->
+            Restorative yoga
+          </li>
+          <li class="painting">
+            <!-- <FontAwesomeIcon icon={faPaintRoller} size="2x" /> <br /> -->
+            Anusara yoga
+          </li>
+          <li class="moving">
+            <!-- <FontAwesomeIcon icon={faTruckFast} size="2x" /> <br /> -->
+            Hot yoga
+          </li>
+          <li class="outdoor">
+            <!-- <FontAwesomeIcon icon={faBuilding} size="2x" /> <br /> -->
+            Jivamukti yoga
+          </li>
+          <li class="rehab">
+            <!-- <FontAwesomeIcon icon={faUniversalAccess} size="2x" /> <br /> -->
+            ViniYoga
+          </li>
+          <li>
+            <i
+              class="fa-solid fa-circle-arrow-right"
+              style="color: #3b3bda; font-size: 20px"
+            ></i>
+          </li>
+          </div>
+          <div class="yoga-second-upper-right">
+            <li class="filter">
+              <img src="assets/filter.jpg" alt="" class="filterIcon" />
+            </li>
+            <button class="toggleBtn">
+              Display Swasthi currency
+              <i
+                class="fa-solid fa-toggle-on toggler"
+                style="color: #3b3bda"
+              ></i>
+            </button>
+          </div>
+        </ul>
+      </div>
+      <!-- <div class="hr">
+      <hr>
+      </div> -->
+      <div>
+        <div class="featuresSection">
+          <button class="feature feature1">
+            For children
+            <img src="assets/child.png" alt="" class="featuresIcon" />
+          </button>
+          <button class="feature feature2">
+            For Gents
+            <img
+              src="assets/men.png"
+              alt=""
+              class="featuresIcon"
+            />
+          </button>
+          <button class="feature feature3">
+            For Ladies
+            <img src="assets/lady.png" alt="" class="featuresIcon" />
+          </button>
+          <button class="feature feature4">
+            For pregnant ladies
+            <img src="assets/pregnant.png" alt="" class="featuresIcon" />
+          </button>
+          <button class="feature feature5">
+            Online
+            <img src="assets/online.png" alt="" class="featuresIcon" />
+          </button>
+          <button class="feature feature6">
+            Offline
+            <img src="assets/offline.png" alt="" class="featuresIcon" />
+          </button>
+          <button class="feature feature6">
+            Offline
+            <img src="assets/offline.png" alt="" class="featuresIcon" />
+          </button>
+          <i
+            class="fa-solid fa-circle-arrow-right"
+            style="
+              color: #3b3bda;
+              font-size: 20px;
+              margin-left: 20px;
+
+            "
+          ></i>
+        </div>  
+        </div>
+      </div>
+      <div class="lower-yoga">
+        <section>
+          <div id="cCarousel">
+              <div id="carousel-vp">
+                  <div id="cCarousel-inner">
+  
+                      <article class="cCarousel-item">
+                          <img src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg" alt="Moon">
+                          <div class="infos">
+                              Yoga Name
+                              <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
+                          </div>
+                          <div class="price"><span class="rate">$10</span> hour</div>
+                      </article>
+  
+                      <article class="cCarousel-item">
+                          <img src="assets/yoga in nature_header_IMG_1044.jpg" alt="Moon">
+                          <div class="infos">
+                              Yoga Name
+                              <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
+                          </div>
+                          <div class="price"><span class="rate">$10</span> hour</div>
+                      </article>
+  
+                      <article class="cCarousel-item">
+                          <img src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg" alt="Moon">
+                          <div class="infos">
+                              Yoga Name
+                              <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
+                          </div>
+                          <div class="price"><span class="rate">$10</span> hour</div>
+                      </article>
+  
+                      <article class="cCarousel-item">
+                          <img src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg" alt="Moon">
+                          <div class="infos">
+                              Yoga Name
+                              <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
+                          </div>
+                          <div class="price"><span class="rate">$10</span> hour</div>
+                      </article>
+  
+                      <article class="cCarousel-item">
+                          <img src="assets/yoga in nature_header_IMG_1044.jpg" alt="Moon">
+                          <div class="infos">
+                              Yoga Name
+                              <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
+                          </div>
+                          <div class="price"><span class="rate">$10</span> hour</div>
+                      </article>
+  
+                      <article class="cCarousel-item">
+                          <img src="assets/yoga in nature_header_IMG_1044.jpg" alt="Moon">
+                          <div class="infos">
+                              <h2>Yoga Name</h2>
+                              <i class="fa-solid fa-star rating" style="color: #3b3bda;"></i> &nbsp; 3.4
+                          </div>
+                          <div class="price"><span class="rate">$10</span> hour</div>
+                      </article>
+                  </div>
+              </div>
+              <div class="left-right-icon">
+                <div class="arrow" id="prev"><i class="fa-solid fa-circle-arrow-left"></i></div>
+                <div class="arrow" id="next"><i class="fa-solid fa-circle-arrow-right"></i></div>
+              </div>
+          </div>
+      </section>
+      </div>
+    </div>
+    <div class="yoga-class">
+      <div class="taskDiv">
+        <div class="taskHeading">
+          <p>Most popular tasks</p>
+          <button class="taskBtn">Show more</button>
+        </div>
+    
+        <!-- Slider wrapper for navigation -->
+        <div class="slider-wrapper">
+          <!-- Left arrow button -->
+          <!-- <button title="btn" class="slider-btn prev-btn">
+            <i class="fa fa-chevron-left"></i>
+          </button> -->
+    
+          <!-- The viewport masks the overflowing items -->
+          <div class="slider-viewport">
+            <div class="container">
+              <div class="class-long">
+                <h6 class="category">Category</h6>
+                <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                <div class="content">
+                  <h2>Home & Apartment Cleaning</h2>
+                  <span>// Starting at $25,24</span>
+                  <button class="contentBtn">HIRE NOW
+                    <i class="fa-solid fa-angle-right hireIcon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="class-long">
+                <div>
+                <h6 class="category">Category</h6>
+                <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
+                <div class="content">
+                  <h2>Furniture Assembly</h2>
+                  <span>// Starting at $38,99</span>
+                  <button class="contentBtn">HIRE NOW
+                    <i class="fa-solid fa-angle-right hireIcon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="class-long">
+                <div>
+                <h6 class="category">Category</h6>
+                <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
+                <div class="content">
+                  <h2>Miner Plumbing</h2>
+                  <span>// Starting at $26,25</span>
+                  <button class="contentBtn">HIRE NOW
+                    <i class="fa-solid fa-angle-right hireIcon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="class-long">
+                <div>
+                <h6 class="category">Category</h6>
+                <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
+                <div class="content">
+                  <h2>Light Installations</h2>
+                  <span>// Starting at $43,99</span>
+                  <button class="contentBtn">HIRE NOW
+                    <i class="fa-solid fa-angle-right hireIcon"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="class-long">
+                <div>
+                <h6 class="category">Category</h6>
+                <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
+                <div class="content">
+                  <h2>House Cleaning</h2>
+                  <span>// Starting at $45</span>
+                  <button class="contentBtn">HIRE NOW
+                    <i class="fa-solid fa-angle-right hireIcon"></i>
+                  </button>
+                </div>
+              </div>
+             
+            </div>
+          </div>
+    
+          <!-- Right arrow button (slider button on right side) -->
+          <!-- <button title="btn" class="slider-btn next-btn">
+            <i class="fa fa-chevron-right"></i>
+          </button> -->
+        </div>
+      </div>
+    </div>
+    
     <div class="container_2">
       <div class="text">
         <h1>Introducing SwastiBharat Project</h1>
@@ -434,6 +693,144 @@
         </div>
       </div>
     </div>
+    <div class="yoga-third">
+      <section>
+        <p class="projectHeading">Most popular Projects
+            <button class="projectBtn">Show more</button>
+        </p>
+        <div id="imageSlider">
+            <div id="sliderViewport">
+              <div id="sliderContent">
+
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="Images/yoga-studio.jpg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            
+                <article class="sliderItem">
+                  <div class="btn-detail">
+                    <button class="details">
+                        Details
+                    </button>
+                    <div class="details1">
+                        Details
+                    </div>
+                    </div>
+                    <img src="Images/yoga-studio7.jpg" alt="Moon">
+                    <div class="info">
+                        Home Classes
+                    </div>
+                </article>
+            </div>
+            
+            </div>
+            <div class="arrow-third">
+              <div class="navArrow" id="previous"><i class="fa-solid fa-circle-arrow-left"></i></div>
+              <div class="navArrow" id="nextSlide"><i class="fa-solid fa-circle-arrow-right"></i></div>
+    </div>
+        </div>
+    </section>
+    </div>
     <div class="third">
       <div class="wrapper">
         <div class="content-box active" id="card-1">
@@ -459,7 +856,7 @@
               <img
                 alt="Person cleaning a room"
                 height="200"
-                src="https://placehold.co/300x200"
+                src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 width="300"
               />
               <div class="icon-badge-1">
@@ -476,12 +873,12 @@
               <img
                 class="first-side-upper"
                 alt="Person cleaning a kitchen"
-                src="https://placehold.co/100x100"
+                src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
               />
               <img
                 alt="Person cleaning a bed"
                 height="100"
-                src="https://placehold.co/100x100"
+                src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
                 width="100"
               />
             </div>
@@ -510,7 +907,7 @@
               <img
                 alt="Person cleaning a room"
                 height="200"
-                src="https://placehold.co/300x200"
+                src="assets/yoga in nature_header_IMG_1044.jpg"
                 width="300"
               />
               <div class="info-badge-2">
@@ -524,12 +921,12 @@
               <img
                 class="second-side-upper"
                 alt="Person cleaning a kitchen"
-                src="https://placehold.co/100x100"
+                src="assets/yoga in nature_header_IMG_1044.jpg"
               />
               <img
                 alt="Person cleaning a bed"
                 height="100"
-                src="https://placehold.co/100x100"
+                src="assets/yoga in nature_header_IMG_1044.jpg"
                 width="100"
               />
             </div>
@@ -558,7 +955,7 @@
               <img
                 alt="Person cleaning a room"
                 height="200"
-                src="https://placehold.co/300x200"
+                src="assets/0eab79f24fe1570e091db2d527495450_t.jpeg"
                 width="300"
               />
               <div class="icon-badge">
@@ -573,12 +970,12 @@
               <img
                 class="third-side-upper"
                 alt="Person cleaning a kitchen"
-                src="https://placehold.co/100x100"
+                src="assets/yoga in nature_header_IMG_1044.jpg"
               />
               <img
                 alt="Person cleaning a bed"
                 height="100"
-                src="https://placehold.co/100x100"
+                src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 width="100"
               />
             </div>
@@ -586,7 +983,7 @@
         </div>
       </div>
     </div>
-    <div class="fourth">
+    <div class="fourth" style="display: none;">
       <div class="fourth-card">
         <div class="container-left">
           <h1 class="container__title">
@@ -594,17 +991,17 @@
             <span class="customer-images">
               <img
                 class="customer-images__image"
-                src="https://storage.googleapis.com/a1aa/image/LiOVy_Nffkm0pC9C_rwdwUcg4RsoxJ7AVJCGkSR2ds0.jpg"
+                src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
                 alt="Customer 1"
               />
               <img
                 class="customer-images__image"
-                src="https://storage.googleapis.com/a1aa/image/z8fsi-K4mQ8WsbI9Xi7vZ6AFIe8tYRSz5v0J_uiNpzw.jpg"
+                src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 alt="Customer 2"
               />
               <img
                 class="customer-images__image"
-                src="https://storage.googleapis.com/a1aa/image/Iq6BvabHCRA3XccE4lsaOk5YFwANwx_mnS67OOGG4-4.jpg"
+                src="assets/yoga in nature_header_IMG_1044.jpg"
                 alt="Customer 3"
               />
             </span>
@@ -614,11 +1011,11 @@
             Discover the thrill of innovation with us. Unleash your potential
             today!
           </p>
-          <div class="features">
-            <div class="feature">
+          <div class="features-fourth">
+            <div class="feature-fourth">
               <img
                 class="feature__icon"
-                src="https://storage.googleapis.com/a1aa/image/keL36N3xS7HXNwlar95DiKxGd1ggmGMtAwLpV3m-u-0.jpg"
+                src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 alt="Happiness Pledge Icon"
               />
               <div>
@@ -628,10 +1025,10 @@
                 </p>
               </div>
             </div>
-            <div class="feature">
+            <div class="feature-fourth">
               <img
                 class="feature__icon"
-                src="https://storage.googleapis.com/a1aa/image/TQkwcuGsC-V09FmGHzVTQWXVXCc5UJia-VgIe_9_xOc.jpg"
+                src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
                 alt="Vetted Taskers Icon"
               />
               <div>
@@ -642,10 +1039,10 @@
                 </p>
               </div>
             </div>
-            <div class="feature">
+            <div class="feature-fourth">
               <img
                 class="feature__icon"
-                src="https://storage.googleapis.com/a1aa/image/m8iptHIwGn9RjNggOssxZtW1FmAbZpbIhWvN5fZC-g8.jpg"
+                src="assets/yoga in nature_header_IMG_1044.jpg"
                 alt="Dedicated Support Icon"
               />
               <div>
@@ -668,7 +1065,7 @@
               <img
                 height="150px"
                 width="150px"
-                src="https://storage.googleapis.com/a1aa/image/BRmAS2sbGbReoX9Ao4n5eCljYCsbZrAEEbaDjH9Ac3M.jpg"
+                src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 alt="A happy couple enjoying time together"
               />
               <div class="item-content">
@@ -695,7 +1092,7 @@
               <img
                 height="100px"
                 width="100px"
-                src="https://storage.googleapis.com/a1aa/image/LsuhvvMgRwdeTlNXDqUJIBG2pUNYl5mlcXaj1kNOpuI.jpg"
+                src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 alt="A group of friends taking a selfie"
               />
               <div class="item-content item-content-dark">
@@ -708,7 +1105,7 @@
         </div>
       </div>
     </div>
-    <div class="footer">
+    <div class="footer" style="display: none;">
       <div class="footer-container">
         <div class="footer-header">
           <div class="footer-logo">
