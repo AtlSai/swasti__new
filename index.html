@@ -36,7 +36,7 @@
     />
   </head>
   <body class="fade-in">
-    <div class="nav_first1">
+    <div class="nav_first1" style="display: none;">
       <div class="nav_first2">
         <h3>
           For Customer Services,
@@ -44,7 +44,7 @@
       </div>
       <hr />
     </div>
-    <nav class="navbar">
+    <nav class="navbar" style="display: none;">
       <div class="logo">SwastiBharat</div>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul class="nav-links">
@@ -58,7 +58,7 @@
         <button><i class="fa-solid fa-user"></i>Login</button>
       </div>
     </nav>
-    <div class="search-contain fade-in">
+    <div class="search-contain fade-in" style="display: none;">
       <div
         class="w-11/12 max-w-5xl mx-auto bg-white p-1 rounded-3xl border border-black mt-2 flex flex-wrap items-center justify-around gap-4"
       >
@@ -117,7 +117,7 @@
         </button>
       </div>
     </div>
-    <div class="container1st">
+    <div class="container1st" style="display: none;">
       <div class="left animate-slide-in-right">
         <div class="top-left">
           <div class="btns">
@@ -202,7 +202,7 @@
         </div>
       </div>
     </div>
-    <div class="yoga-second">
+    <div class="yoga-second" style="display: none;">
       <div class="upper-yoga">
       <div class="yoga-second-upper">
         <i
@@ -381,7 +381,7 @@
       </section>
       </div>
     </div>
-    <div class="yoga-class">
+    <div class="yoga-class" style="display: none;">
       <div class="taskDiv">
         <div class="taskHeading">
           <p>Most popular tasks</p>
@@ -399,8 +399,10 @@
           <div class="slider-viewport">
             <div class="container">
               <div class="class-long">
+                <div class="category-section">
                 <h6 class="category">Category</h6>
                 <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
                 <div class="content">
                   <h2>Home & Apartment Cleaning</h2>
                   <span>// Starting at $25,24</span>
@@ -411,8 +413,10 @@
               </div>
               <div class="class-long">
                 <div>
+                  <div class="category-section">
                 <h6 class="category">Category</h6>
                 <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
                 </div>
                 <div class="content">
                   <h2>Furniture Assembly</h2>
@@ -424,8 +428,10 @@
               </div>
               <div class="class-long">
                 <div>
+                  <div class="category-section">
                 <h6 class="category">Category</h6>
                 <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
                 </div>
                 <div class="content">
                   <h2>Miner Plumbing</h2>
@@ -437,8 +443,10 @@
               </div>
               <div class="class-long">
                 <div>
+                  <div class="category-section">
                 <h6 class="category">Category</h6>
                 <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
                 </div>
                 <div class="content">
                   <h2>Light Installations</h2>
@@ -450,8 +458,10 @@
               </div>
               <div class="class-long">
                 <div>
+                  <div class="category-section">
                 <h6 class="category">Category</h6>
                 <i class="bi bi-arrow-up-right-circle-fill topRightIcon"></i>
+                </div>
                 </div>
                 <div class="content">
                   <h2>House Cleaning</h2>
@@ -472,7 +482,7 @@
         </div>
       </div>
     </div>
-    <div class="container_2">
+    <div class="container_2" style="display: none;">
       <div class="text">
         <h1>Introducing SwastiBharat Project</h1>
       </div>
@@ -592,12 +602,11 @@
                 <p style="font-weight: bold">44%</p> -->
                   <p>Comprehensive Notes And Summaries With Action Items</p>
                   <div class="progress-card-last">
-                    <div
-                      style="font-size: 45px; font-weight: bold; color: blue"
-                    >
-                      +
+                    <div class="plus">
+                     <h1>+</h1>
+                      <p style="font-weight: bold; font-size: 37px;">44%</p>
                     </div>
-                    <p style="font-weight: bold; font-size: 37px;">44%</p>
+                    <!-- <p style="font-weight: bold; font-size: 37px;">44%</p> -->
                     <img
                       src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
                       alt="Notebook"
@@ -867,7 +876,7 @@
             <div class="main-image-1">
               <img
                 alt="Person cleaning a room"
-                height="200"
+                height="300"
                 src="assets/pngtree-woman-doing-yoga-in-the-nature-yoga-fitness-concentration-photo-image_36190546.jpg"
                 width="300"
               />
@@ -889,9 +898,10 @@
               />
               <img
                 alt="Person cleaning a bed"
-                height="100"
+                height="60px"
                 src="assets/lovepik-male-doing-yoga-exercise-in-nature-picture_501766254.jpg"
-                width="100"
+                width="100px"
+                class="side-image-2"
               />
             </div>
           </div>
