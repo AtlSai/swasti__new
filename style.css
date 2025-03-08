@@ -101,9 +101,9 @@
 
 .logo {
     color: rgb(14, 14, 15);
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    font-family: "Assistant", sans-serif;
+    /* font-family: "Assistant", sans-serif; */
 }
 
 /* Hamburger Icon */
@@ -1808,16 +1808,28 @@ border-radius: 20px;
     background-color: aqua;
 }
 
+.second-side-lower{
+    width: 110px;
+    height: 85px;
+    background-color: aqua;
+}
+
 .third-side-upper {
     width: 200px;
     height: 100px;
     background-color: aqua;
 }
 
+.third-side-lower{
+    width: 110px;
+    height: 110px;
+    background-color: aqua;
+}
+
 .wrapper {
     width: 94%;
-    /* margin: 0 auto; */
-    /* padding: 24px; */
+    margin: 0 auto;
+    padding: 24px;
     height: auto;
 }
 
@@ -1856,8 +1868,9 @@ border-radius: 20px;
 }
 
 .content-box p {
-    font-size: 1.125rem;
+    font-size: 14px;
     margin-bottom: 24px;
+    line-height: 25px;
 }
 
 .cta-button {
@@ -1889,7 +1902,7 @@ border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 24px;
+    margin-bottom: 20px;
 }
 
 .image-gallery .main-image {
@@ -1901,7 +1914,7 @@ border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.icon-badge{
+.image-gallery .main-image .icon-badge {
     position: absolute;
     top: 8px;
     left: 8px;
@@ -1909,22 +1922,7 @@ border-radius: 20px;
     color: white;
     padding: 8px;
     border-radius: 9999px;
-    height: 30px;
-    width: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
-
-/* .image-gallery .main-image {
-    position: absolute;
-    top: 8px;
-    left: 8px;
-    background-color: #3B82F6;
-    color: white;
-    padding: 8px;
-    border-radius: 9999px;
-} */
 
 .image-gallery .main-image .info-badge {
     position: absolute;
@@ -1949,8 +1947,8 @@ border-radius: 20px;
 .image-gallery .side-images {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-left: 16px;
+    gap: 10px;
+    margin-left: 10px;
 }
 
 @media (min-width: 968px) {
@@ -1974,7 +1972,7 @@ border-radius: 20px;
 }
 
 .main-image-1 {
-    height: 270px;
+    height: 250px;
     width: 200px;
     background-color: #f7f7fd;
     border-radius: 10px;
@@ -1982,28 +1980,55 @@ border-radius: 20px;
     flex-direction: column;
 }
 
-
+.icon-badge-1{
+    position: absolute;
+    background-color: #3b82f6;
+    border-radius: 6px;
+    height: 35px;
+    width:40px;
+    margin-top: 10px;
+    margin-left: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .info-badge-1 {
-    background-color: burlywood;
+    position: absolute;
+    background-color: whitesmoke;
+    color: #070707;
     border-radius: 20px;
     height: 70px;
-    width: 170px;
+    width: 140px;
     display: flex;
     padding: 10px;
-    margin-left: -50px;
+    margin-top: 210px;
+    margin-left: -100px;
+}
+
+.sellerNumber{
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.sellerIcon{
+    width: 20%;
+    /* background-color: #007bff; */
 }
 
 .info-badge-2 {
     background-color: white;
     color: #070707;
     border-radius: 10px;
-    padding: 10px;
-    font-size: 1rem;
-    height: 70px;
+    padding: 12px;
+    /* font-size: 1.5rem; */
+    font-weight:700;
+    height: 75px;
     width: 280px;
     margin-top: 15px;
-    margin-left: -50px;
+    margin-left: -30px;
 }
 
 .main-image-2 {
@@ -2011,18 +2036,32 @@ border-radius: 20px;
     height: 250px;
 }
 
+.main-img-2{
+    width: 210px;
+    height: 170px;
+    margin-left: 40px;
+}
+
 .info-badge-3 {
     position: absolute;
     bottom: -41px;
-    right: 10px;
-    height: 70px;
+    right: 20px;
+    height: 55px;
     font-size: 15px;
-    width: 150px;
+    width: 135px;
     background-color: white;
     color: #0B0D39;
     padding: 8px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.info-badge-3-text{
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: -50px;
+    margin-left: 25px;
 }
 
 .footer {
@@ -2062,7 +2101,8 @@ border-radius: 20px;
 }
 
 .footer-logo span {
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
     font-weight: bold;
     margin-left: 8px;
 }
@@ -2073,7 +2113,8 @@ border-radius: 20px;
 
 /* Footer tagline */
 .footer-tagline {
-    font-size: 20px;
+    color: white;
+    font-size: 25px;
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
@@ -2125,6 +2166,10 @@ border-radius: 20px;
     flex-wrap: wrap;
     justify-content: space-between;
     text-align: center;
+}
+
+.select {
+    background-color: #1a202c;
 }
 
 .footer-content h3 {
@@ -2419,7 +2464,7 @@ border-radius: 20px;
 
 .button {
     background-color: white;
-    color: #1E3A8A;
+    color: black;
     font-weight: bold;
     padding: 0.5rem 1rem;
     border-radius: 9999px;
@@ -2449,13 +2494,15 @@ border-radius: 20px;
     height: 100%;
 }
 
-.title {
-    font-size: 1.5rem;
+.title1 {
+    font-size: 2rem;
     font-weight: bold;
     color: #1D1D1D;
 }
 
 .subtitle {
+    font-size: 13px;
+    font-weight: bold;
     width: 60%;
     color: #5A5A5A;
     margin-top: 0.5rem;
@@ -2521,19 +2568,22 @@ border-radius: 20px;
 }
 
 .item-content button {
-    margin-top: 0.5rem;
+    float: right;
+    margin-top: 50px;
+    width: 80px;
+    height: 23px;
     background-color: #1D1D1D;
     color: white;
-    padding: 0.5rem 1rem;
+    font-size: 12px;
     border: none;
     border-radius: 9999px;
     cursor: pointer;
 }
 
 .item-content-dark {
-    background-color: #1D1D1D;
+    background-color: rgb(59, 59, 218);
     color: white;
-    width: 50%;
+    width: 60%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -2549,24 +2599,36 @@ border-radius: 20px;
 }
 
 .item-content-dark .percentage {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: black;
+    color: white;
+    background-color: rgb(59, 59, 218);
     /* width: auto; */
 }
 
+.percent{
+    /* font-size: 18px; */
+}
+
+.percentage-img{
+    float: right;
+    background-color: white;
+    border: 1px solid;
+}
+
 .start-button {
-    height: 40px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 35%;
+    font-size: 12px;
     background-color: #1D1D1D;
     color: white;
-    padding: 0.75rem;
     border: none;
     border-radius: 9999px;
     cursor: pointer;
+    /* margin-top: 20px; */
 }
 
 .yoga-second {
@@ -2970,7 +3032,7 @@ li:hover {
 }
 
 .projectHeading {
-    height: 100px;
+    height: 40px;
     width: 94%;
     /* background-color: #707f8f; */
     margin: auto;
@@ -2978,10 +3040,9 @@ li:hover {
     align-items: center;
     justify-content: space-between;
     font-size: 25px;
+    font-weight: bold;
     /* font-family: Arial, Helvetica, sans-serif; */
     margin-top: 50px;
-    font-family: "Baloo 2", sans-serif;
-    font-weight: 500;
 }
 
 #imageSlider {
@@ -2993,7 +3054,9 @@ li:hover {
 
 .arrow-third {
     height: 40px;
-    width: 80px;
+    width: 75px;
+    margin-top: -20px;
+    margin-right: 30px;
     /* background-color: darkgreen; */
     display: flex;
     align-items: center;
@@ -3067,7 +3130,8 @@ li:hover {
 
 .btn-detail {
     height: 40px;
-    width: 150px;
+    width: 130px;
+    margin-left: 10px;
     /* background-color: darkred; */
     position: absolute;
     display: flex;
@@ -3077,36 +3141,34 @@ li:hover {
 
 .details {
     /* position: absolute; */
-    height: 25px;
-    width: 65px;
-    font-size: 14px;
+    height: 20px;
+    width: 60px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
+    opacity: .7;
     color: black;
     border: 1px;
     border-radius: 10px;
     cursor: pointer;
-    font-family: "Baloo 2", sans-serif;
-    opacity: 0.7;
 }
 
 .details1 {
     /* position: absolute; */
-    height: 25px;
-    width: 65px;
-    font-size: 14px;
+    height: 20px;
+    width: 60px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: white;
+    opacity: .7;
     color: black;
     border: 1px;
     border-radius: 10px;
     cursor: pointer;
-    font-family: "Baloo 2", sans-serif;
-    opacity: 0.7;
 }
 
 .info {
